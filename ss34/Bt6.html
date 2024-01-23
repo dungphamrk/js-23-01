@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt6</title>
+        <style>
+        button{
+            background-color: rgb(59, 221, 59);
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 20px;
+            width: 110px;
+        }
+
+    </style>
+    </head>
+    <body>
+
+        <input id="infor" type="text">
+        <button onclick="add()">add item</button>
+
+        <ul id="List">
+        </ul>
+        <script>
+        function add() {
+            let item= document.createElement("li");
+            item.innerHTML= document.getElementById("infor").value;
+            document.getElementById("List").appendChild(item); 
+        }
+        
+
+    </script>
+    </body>
+</html>

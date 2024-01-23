@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt7</title>
+        <style>
+        table,tr,th,td {
+            border: 1px solid black;
+        }
+        button{
+            background-color: rgb(59, 221, 59);
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 20px;
+            width: 110px;
+        }
+    </style>
+
+    </head>
+    <body>
+        <table id="tbl">
+            <tr id="line">
+                <th>Cell 1 row 1</th>
+                <th>Cell 2 row 1</th>
+                <th>Cell 3 row 1</th>
+            </tr>
+        </table>
+        <button onclick="add()">add row</button>
+        <script>
+        function add() {
+            let tbl=document.getElementById("tbl");
+            let row= tbl.insertRow(1);
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+            let cell3 = row.insertCell(2);
+            
+            cell1.innerHTML = "1";
+            cell2.innerHTML = "2";
+            cell3.innerHTML="3"
+        }
+    </script>
+    </body>
+</html>
